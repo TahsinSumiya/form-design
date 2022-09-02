@@ -1,0 +1,85 @@
+.register-wrapper{
+    background-image: -webkit-linear-gradient(135deg, rgb(172 200 219) 30%, rgb(53 121 161) 90%);
+    background-image:linear-gradient(135deg, rgb(172 200 219) 30%, rgb(53 121 161) 90%);
+/* background-image: -webkit-linear-gradient(135deg, #0eeff0 30%, #088f90 90%);
+    background-image: linear-gradient(135deg, #0eeff0 30%, #088f90 90%);  */
+    position: relative;
+    z-index: 3;
+    padding: 100px;
+    color: rgb(12 74 141);
+    /* margin: 0px 368px; */
+}
+.register-wrapper *{
+    box-sizing: border-box;
+}
+
+.register-wrapper form input {
+    display: inline-block;
+    width: 100%;
+    padding : 0 20px;
+    line-height: 50px;
+    height: 50px;
+    background: white;
+    border: solid 1px rgb(88, 86, 86);
+    border-bottom-width: 2px;
+    border-radius: 6px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline:none;
+   
+}
+.register-wrapper form input:not(:last-child){
+    margin-bottom: 20px;
+}
+.register-wrapper form input[type="email"]:focus,
+.register-wrapper form input[type="email"]:active,
+.register-wrapper form input[type="password"]:focus,
+.register-wrapper form input[type="password"]:active{
+    border-color: rgb(241, 244, 248);
+}
+.register-wrapper form input[type="submit"]{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: rgb(115, 176, 199);
+    background-size: 40px 40px;
+    background-image: -webkit-linear-gradient(
+        45deg,rgba(255,255,255,0.15) 25%,
+        rgba(0,0,0,0) 25%,
+        rgba(0,0,0,0) 50%,
+        rgba(255,255,255,0.15) 50%,
+        rgba(255,255,255,0.15) 70%,
+        rgba(0,0,0,0) 75%,
+        rgba(0,0,0,0) 75%
+
+    ) ;
+    border: solid 1px rgb(115, 176, 199);
+    color: rgb(8, 26, 133);
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition:all 0.3s ease ;
+}
+.register-wrapper form input[type="submit"]:hover{
+    background-size: 45px 45px;
+}
+.register-title{
+    font-size: 2rem;
+    padding-bottom : 20px;
+    margin: 0 0 20px;
+    border-bottom: dashed 1px rgb(42, 36, 36);
+
+}
+.register-block{
+    position: relative;
+    display: block;
+   
+    width:100%;
+    max-width:354px;
+    margin: 0 auto;
+    background: white;
+    box-shadow : 0 0 36px #585050;
+    border-radius: 5px;
+    
+}
